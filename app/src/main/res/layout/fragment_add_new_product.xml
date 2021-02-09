@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.AddNewProductFragment"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Select Phone "
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bb" />
+
+    <LinearLayout
+        android:id="@+id/linear1_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_category"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/samsung_category_add"
+            >
+            <ImageView
+                android:layout_margin="5dp"
+
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/sam"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Samsung"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="5dp"
+            android:layout_height="100dp"
+            android:background="@color/bb" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/apple_categori_add"
+            >
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/apple_logo"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="5dp"
+            android:layout_height="100dp"
+            android:background="@color/bb" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/huawei_categori_add"
+            >
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/huawei_logo"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Huawei"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bb" />
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/htc_categori_add"
+            >
+            <ImageView
+                android:layout_margin="5dp"
+
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:src="@drawable/htc_logo"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HTC"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="5dp"
+            android:layout_height="100dp"
+            android:background="@color/bb" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/mi_categori_add"
+            >
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/mi_logo"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xsiaomi"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+ <View
+            android:layout_margin="10dp"
+            android:layout_width="5dp"
+            android:layout_height="100dp"
+            android:background="@color/bb" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_app_logo"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Null"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

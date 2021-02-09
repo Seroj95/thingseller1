@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.sunnyschool.thingseller.ui.ProductDetalsFr"
+        android:orientation="vertical"
+        android:padding="30dp"
+        >
+
+        <ImageView
+            android:src="@drawable/select_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/pid_detals_images"
+            android:outlineSpotShadowColor="@color/button_bg_3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pid name"
+            android:textSize="18sp"
+            android:textColor="@color/button_bg_3"
+            android:id="@+id/pid_detals_name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_price"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/pid_detals_price"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/bb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Condition։"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="New"
+                android:layout_marginStart="10dp"
+                android:id="@+id/pid_detals_newAndOld"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/bb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Product Add Date։"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="12/12/2020 : 12:30"
+                android:layout_marginStart="10dp"
+                android:id="@+id/pid_detals_date"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/bb" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pid_detals_description"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/bb" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="5dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pid_detals_profile_image"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@android:color/white"/>
+
+
+        <TextView
+            android:id="@+id/pid_detals_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="user name"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+        <Button
+            android:drawableEnd="@drawable/ic_baseline_call_24_g"
+            android:id="@+id/pid_detals_call_btn"
+            style="@style/LoginButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Call" />
+    </LinearLayout>
+
+</ScrollView>

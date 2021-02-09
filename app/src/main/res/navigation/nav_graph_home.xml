@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/productDetalsFr">
+
+
+    <fragment
+        android:id="@+id/productDetalsFr"
+        android:name="com.sunnyschool.thingseller.ui.ProductDetalsFr"
+        android:label="fragment_product_detals2"
+        tools:layout="@layout/fragment_product_detals2" />
+</navigation>

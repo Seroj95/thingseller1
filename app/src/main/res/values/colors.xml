@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#DDB848</color>
+    <color name="purple_500">#F3BA0F</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FFC107</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bb">#DDDADA</color>
+    <color name="white1">#00FFFFFF</color>
+
+    <color name="recycler_text_color">#ff5b7f</color>
+
+
+
+    <color name="background_color_1">#FFF</color>
+    <color name="background_color_2">#FFF</color>
+    <color name="background_color_3">#FFF</color>
+    <color name="background_color_4">#FFF</color>
+    <color name="titleTextColor">#515C6F</color>
+    <color name="appHighLightColor">#FD7E77</color>
+    <color name="inputTextColor">#515C6F</color>
+    <color name="button_text_color">#FFF</color>
+    <color name="button_bg_1">#fc9272</color>
+    <color name="button_bg_2">#fc9970</color>
+    <color name="button_bg_3">#ff5b7f</color>
+    <color name="button_bg_4">#F3BA0F</color>
+    <color name="button_bg_5">#DDB848</color>
+
+
+
+
+</resources>

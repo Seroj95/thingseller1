@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.sunnyschool.thingseller.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.technostyle.ui.gallery.ProfileFragment"
+        android:label="@string/menu_Profile_settings"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_add_new_product"
+        android:name="com.example.technostyle.ui.slideshow.AddNewProductFragment"
+        android:label="@string/menu_add_new_product"
+        tools:layout="@layout/fragment_add_new_product" >
+
+        <action
+            android:id="@+id/action_nav_slideshow_to_addProductDetalsFragment"
+            app:destination="@id/addProductDetalsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProductDetalsFragment"
+        android:name="com.sunnyschool.thingseller.ui.addproduct.AddProductDetalsFragment"
+        android:label="fragment_add_product_detals"
+        tools:layout="@layout/fragment_add_product_detals"
+        >
+
+        <argument
+            android:name="name"
+            android:defaultValue="null"
+            app:argType="string"
+            app:nullable="true"
+            />
+        <action
+            android:id="@+id/action_addProductDetalsFragment_to_nav_add_new_product"
+            app:destination="@id/nav_add_new_product" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.sunnyschool.thingseller.ui.Category"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
+
+
+</navigation>

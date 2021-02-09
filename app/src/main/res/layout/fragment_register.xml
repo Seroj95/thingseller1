@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sunnyschool.thingseller.ui.RegisterFragment">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/container_register"
+    android:gravity="center"
+    android:padding="30dp">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+
+        android:contentDescription="@null"
+        android:src="@drawable/t" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_text_layout"
+        style="@style/InputLayoutStyle_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        app:hintTextColor="@color/appHighLightColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:drawableEnd="@drawable/ic_username_vector"
+            android:id="@+id/userName_register"
+            style="@style/InputTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="textPersonName"
+            android:textColor="@color/inputTextColor"
+            android:selectAllOnFocus="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+   <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/email_text_layout_reg"
+        style="@style/InputLayoutStyle_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_id"
+        app:hintTextColor="@color/appHighLightColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:drawableEnd="@drawable/ic_baseline_alternate_email_24"
+            android:id="@+id/email_register"
+            style="@style/InputTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/inputTextColor"
+            android:selectAllOnFocus="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+   <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone_text_layout"
+        style="@style/InputLayoutStyle_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        app:hintTextColor="@color/appHighLightColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_register"
+            style="@style/InputTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:drawableEnd="@drawable/ic_baseline_call_24_green"
+            android:inputType="phone"
+            android:textColor="@color/inputTextColor"
+            android:selectAllOnFocus="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_text_layout"
+        style="@style/InputLayoutStyle_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_password"
+        app:hintTextColor="@color/appHighLightColor"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/register_password"
+            style="@style/InputTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:textColor="@color/inputTextColor"
+            android:selectAllOnFocus="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/register_btn"
+        style="@style/LoginButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/register_Sign_In_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/poppins_regular"
+        android:lineSpacingExtra="11sp"
+        android:text="Sign In Now"
+        android:textColor="@color/inputTextColor"
+        android:textSize="18sp" />
+
+
+
+</LinearLayout>
+
+</ScrollView>
